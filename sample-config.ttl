@@ -1,0 +1,20 @@
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix ja:     <http://jena.hpl.hp.com/2005/11/Assembler#> .
+@prefix rsc:	<http://purl.org/rdfstats/config#> .
+@prefix :       <http://example.com/config> .
+
+:config a rsc:Configuration ;
+	rsc:histogramSize "50"^^xsd:int ;
+	rsc:statsModel [
+		a ja:FileModel ;
+		ja:directory <file:data> ;
+		ja:modelName "rdfstats.n3" ;
+	] ;
+#	rsc:endpointUri <http://domain1.com/sparql> ;
+#	rsc:endpointUri <http://domain2.com/sparql> ;
+#	rsc:endpointUri <http://domain3.com/sparql> ;
+	rsc:documentUrl <file:testing/iswc-example-data.n3> ;
+.

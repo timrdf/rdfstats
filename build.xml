@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="rdfstats" default="jar" basedir=".">
+    <description>
+    	RDFStats build file, http://rdfstats.sourceforge.net
+    </description>
+	<property name="name" location="location"/>
+
+<!-- properties for source and target directories -->
+	
+	<property name="java.sourcedir" value="src/main/java" />
+	<property name="lib.dir" value="lib" />
+
+	<property name="java.builddir" value="build" />
+	<property name="target.dir" value="." />
+	
+	
+<!-- properties for the vocabulary generation (with Jena schemagen) -->
+	
+	<property name="vocab.sourcedir" value="vocabulary" />
+	<property name="vocab.targetdir" value="src/main/java/at/jku/rdfstats/vocabulary" />
+	<property name="vocab.template"  value="${vocab.sourcedir}/schemagen.rdf" />
+
+<!-- ############### build targets ############### -->
+
+	<target name="compose-classpaths">
+	    <path id="classpath">
+	    	<fileset dir="${lib.dir}">
+	    	    <include name="**/*.jar"/>
+	    	</fileset>
+		</path>
+		<pathconvert property="classpath" refid="classpath" pathsep=" " dirsep="/" />		
+	</target>
+	
+<!-- Section: vocabulary generation -->
+  <target name="vocab" depends="vocab.rdfstats,vocab.scovo,vocab.config" />
+	
+  <target name="vocab.rdfstats" depends="vocab-check.rdfstats,compose-classpaths" unless="vocab-nobuild.rdfstats">
+    <java classname="jena.schemagen" classpathref="classpath" fork="yes" failonerror="true">
+      <arg value="-i" />
+      <arg value="file:${vocab.sourcedir}/purl.org/rdfstats/stats.n3" />
+      <arg value="-o" />
+      <arg value="${vocab.targetdir}" />
+      <arg value="-c" />
+      <arg value="${vocab.template}" />
+      <arg value="-n" />
+	  <arg value="Stats" />
+    </java>
+  </target>
+	
+  <target name="vocab-check.rdfstats">
+    <uptodate
+       property="vocab-nobuild.rdfstats"
+       srcFile="${vocab.sourcedir}/purl.org/rdfstats/stats.n3"
+       targetFile="${vocab.targetdir}/RDFStats.java" />
+  </target>
+	
+  <target name="vocab.config" depends="vocab-check.config,compose-classpaths" unless="vocab-nobuild.config">
+    <java classname="jena.schemagen" classpathref="classpath" fork="yes" failonerror="true">
+      <arg value="-i" />
+      <arg value="file:${vocab.sourcedir}/purl.org/rdfstats/config.n3" />
+      <arg value="-o" />
+      <arg value="${vocab.targetdir}" />
+      <arg value="-c" />
+      <arg value="${vocab.template}" />
+      <arg value="-n" />
+	  <arg value="Config" />
+    </java>
+  </target>
+	
+  <target name="vocab-check.config">
+    <uptodate
+       property="vocab-nobuild.config"
+       srcFile="${vocab.sourcedir}/purl.org/rdfstats/config.n3"
+       targetFile="${vocab.targetdir}/Config.java" />
+  </target>
+
+  <target name="vocab.scovo" depends="vocab-check.scovo,compose-classpaths" unless="vocab-nobuild.scovo">
+    <java classname="jena.schemagen" classpathref="classpath" fork="yes" failonerror="true">
+      <arg value="-a" />
+      <arg value="http://purl.org/NET/scovo#" />
+      <arg value="-i" />
+      <arg value="file:${vocab.sourcedir}/purl.org/NET/scovo" />
+      <arg value="-f" />
+      <arg value="RDF/XML" />
+      <arg value="-o" />
+      <arg value="${vocab.targetdir}" />
+      <arg value="-c" />
+      <arg value="${vocab.template}" />
+      <arg value="-n" />
+	  <arg value="SCOVO" />
+    </java>
+  </target>
+	
+  <target name="vocab-check.scovo">
+    <uptodate
+       property="vocab-nobuild.scovo"
+       srcFile="${vocab.sourcedir}/purl.org/NET/scovo"
+       targetFile="${vocab.targetdir}/SCOVO.java" />
+  </target>
+	
+  <target name="vocab.toXML" depends="vocab">
+	<java classname="jena.rdfcopy" classpathref="classpath" fork="yes"
+		output="${vocab.sourcedir}/purl.org/rdfstats/stats" failonerror="true">
+		<arg value="${vocab.sourcedir}/purl.org/rdfstats/stats.n3"/>
+		<arg value="N3"/>
+		<arg value="RDF/XML-ABBREV"/>
+	</java>
+	<java classname="jena.rdfcopy" classpathref="classpath" fork="yes"
+		output="${vocab.sourcedir}/purl.org/rdfstats/config" failonerror="true">
+		<arg value="${vocab.sourcedir}/purl.org/rdfstats/config.n3"/>
+		<arg value="N3"/>
+		<arg value="RDF/XML-ABBREV"/>
+	</java>
+  </target>
+
+	<!-- Section: building -->
+
+	<target name="build" depends="vocab,vocab.toXML,compose-classpaths">
+		<mkdir dir="${java.builddir}" />
+		<javac srcdir="${java.sourcedir}"
+			destdir="${java.builddir}"
+			classpathref="classpath"
+			verbose="on"
+			deprecation="on"
+			debug="on"
+			target="1.5"
+		/>
+		<copy todir="${java.builddir}">
+			<fileset dir="${java.sourcedir}"
+				excludes="**/*.java" />
+		</copy>
+	</target>
+	
+	<target name="clean">
+		<delete dir="${java.builddir}" />
+		<mkdir dir="${java.builddir}" />
+	</target>
+	
+	<target name="jar" depends="build">
+		<jar destfile="${target.dir}/rdfstats.jar" index="true">
+			<fileset dir="${java.builddir}">
+	    		<include name="**/*"/>
+			</fileset>
+		</jar>
+	</target>
+
+</project>

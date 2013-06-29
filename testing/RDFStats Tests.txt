@@ -1,0 +1,18 @@
+Tests:
+
+1. plain (s, p, o) triple pattern queries
+   - 8 variants (concrete/variable)
+   - different filter epressions involving s, p, o, sp, so, po, spo (powerset combination)
+
+2. BGP queries
+   - >2 triple patterns
+   - filters
+
+3. Complex queries including... 
+   - joined group patterns
+   - optional and filtered optional
+   - union
+   - distinct
+   - slice, etc.
+
+4. different data distributions => determining factor

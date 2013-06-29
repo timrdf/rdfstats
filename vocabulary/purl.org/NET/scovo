@@ -1,0 +1,68 @@
+<rdf:RDF
+ xmlns:cc="http://creativecommons.org/ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:s="http://www.w3.org/2000/01/rdf-schema#"
+ xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about="http://purl.org/NET/scovo">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:creator rdf:resource="http://dannyayers.com/me"/>
+        <dc:creator rdf:resource="http://esw.w3.org/topic/WolfgangHalb"/>
+        <dc:creator rdf:resource="http://kmi.open.ac.uk/people/tom/"/>
+        <dc:creator rdf:resource="http://moustaki.org/foaf.rdf#moustaki"/>
+        <dc:creator rdf:resource="http://sw-app.org/mic.xhtml#i"/>
+        <dc:creator rdf:resource="http://www.cambridgesemantics.com/people/about/lee"/>
+        <dc:title>The Statistical Core Vocabulary (scovo)</dc:title>
+        <s:seeAlso rdf:resource="http://linkeddata.org/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo">
+        <xhv:alternate rdf:resource="http://www.w3.org/2007/08/pyRdfa/extract?uri=http://purl.org/NET/scovo"/>
+        <xhv:stylesheet rdf:resource="http://purl.org/NET/print.css"/>
+        <xhv:stylesheet rdf:resource="http://purl.org/NET/scovo.css"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo#min">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <s:domain rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+        <s:label>has a minimum range value</s:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo#Dimension">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <s:comment>a dimension of a statistical data item</s:comment>
+        <s:label>Dimension</s:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo#datasetOf">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <s:domain rdf:resource="http://purl.org/NET/scovo#Dataset"/>
+        <s:label>is the dataset of</s:label>
+        <s:range rdf:resource="http://purl.org/NET/scovo#Item"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo#Item">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <s:comment>a statistical data item</s:comment>
+        <s:label>Item</s:label>
+        <s:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo#Dataset">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <s:comment>a statistical dataset</s:comment>
+        <s:label>Dataset</s:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo#max">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <s:domain rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+        <s:label>has a maximum range value</s:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo#dimension">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <s:domain rdf:resource="http://purl.org/NET/scovo#Item"/>
+        <s:label>has a dimension</s:label>
+        <s:range rdf:resource="http://purl.org/NET/scovo#Dimension"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/scovo#dataset">
+        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <s:domain rdf:resource="http://purl.org/NET/scovo#Item"/>
+        <s:label>belongs to dataset</s:label>
+        <s:range rdf:resource="http://purl.org/NET/scovo#Dataset"/>
+    </rdf:Description>
+</rdf:RDF>

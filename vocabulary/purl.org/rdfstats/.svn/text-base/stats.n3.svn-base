@@ -1,0 +1,72 @@
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix scv:	<http://purl.org/NET/scovo#> .
+@prefix dc:		<http://purl.org/dc/elements/1.1/> .
+@prefix :		<http://purl.org/rdfstats/stats#> .
+
+# RDFStats statistics vocabulary
+
+### SOURCE TYPES ###
+
+:SourceType				a rdfs:Class ;
+	rdfs:label			"Abstract class for data source types" .
+
+:SPARQLEndpoint			a :SourceType , rdfs:Class ; # also class to let schemagen generate a constant!
+	rdfs:label			"SPARQL endpoint" .
+
+:RDFDocument			a :SourceType , rdfs:Class ; # also class to let schemagen generate a constant!
+	rdfs:label			"RDF document " .
+
+
+### DATASET ###
+
+:RDFStatsDataset 		a rdfs:Class ;
+	rdfs:subClassOf 	scv:Dataset ;
+	rdfs:label			"An RDFStats statistics is a SCOVO Dataset which has a corresponding SPARQL endpointUri" .
+
+:sourceUrl			a rdf:Property ;
+	rdfs:label		"The URL of the SPARQL endpoint or RDF document containing the source dataset." ;
+	rdfs:domain		:RDFStatsDataset ;
+	rdfs:range		rdfs:Resource .
+
+:sourceType			a rdf:Property ;
+	rdfs:label		"The source where the data come from, e.g. :SPARQLEndpoint or :RDFDocument" ;
+	rdfs:domain		:RDFStatsDataset ;
+	rdfs:range		:SourceType .
+
+### ITEMS ###
+
+:Histogram a rdfs:Class ;
+	rdfs:subClassOf	scv:Item ;
+	rdfs:label		"RDFStats histogram" .
+
+:PropertyHistogram	a rdfs:Class ;
+	rdfs:subClassOf	:Histogram ;
+	rdfs:label		"RDFStats histogram over property values" .
+
+:SubjectHistogram	a rdfs:Class ;
+	rdfs:subClassOf	:Histogram ;
+	rdfs:label		"RDFStats histogram over subjects" .
+
+### Dimensions ###
+
+:classDimension		a rdf:Property ;
+	rdfs:subPropertyOf	scv:dimension ;
+	rdfs:domain		:Histogram ;
+	rdfs:range		rdfs:Class .
+
+:propertyDimension	a rdf:Property ;
+	rdfs:subProeprtyOf	scv:dimension ;
+	rdfs:domain		:Histogram ;
+	rdfs:range		rdf:Property .
+
+:rangeDimension		a rdf:Property ;
+	rdfs:subPropertyOf	scv:dimension ;
+	rdfs:domain		:Histogram ;
+	rdfs:range		rdfs:Resource .
+
+### Misc ###
+
+:blankNode			a rdfs:Resource , rdfs:Class ; # make it a class such that schemagen creates the reference
+	rdfs:label		"identifies a blank node object type" .

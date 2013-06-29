@@ -1,0 +1,519 @@
+@prefix stats:   <http://purl.org/rdfstats/stats#> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAADaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAABoA
+AAAtAAAAHQAAAGQAAABkMjAwNy0wNy0yMSAwNDozOToxOAMyMDA5LTA3LTE1IDEzOjIxOjU2AwAA
+ABUAAAAVAAAAFTIwMDcDMjAwOAMyMDA5AwAAABoAAAAtAAAAHQ==""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_isodate> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAAWaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAgA
+AAAHAAAACAAAAAEAAAAEAAAABAAAAAUAAAADAAAAAgAAAAMAAAAGAAAACwAAAAcAAAABAAAABQAA
+AAMAAAABAAAACwAAAAMAAAADAAAAAwAAAAEAAABkAAAAVkFmZ2hhbmlzdGFuA1phbWJpYQMAAAAG
+AAAADAAAACZBA0IDQwNEA0UDRgNHA0gDSgNLA0wDTQNOA08DUANRA1IDUwNUA1UDVgNaAwAAAAcA
+AAAGAAAABwAAAAEAAAAEAAAABAAAAAQAAAADAAAAAQAAAAMAAAAEAAAACQAAAAcAAAABAAAABQAA
+AAEAAAABAAAACQAAAAMAAAADAAAAAgAAAAE=""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_country> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHmrFOrYAAAAyaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjZGF0ZVRpbWUDAAAA
+BAAAAAMAAAADAAAAAQAAAAMAAAACAAAABAAAAAEAAAAAAAAAAQAAAAAAAAABAAAAAgAAAAIAAAAD
+AAAAAQAAAAQAAAACAAAAAQAAAAEAAAABAAAAAwAAAAIAAAAFAAAAAgAAAAAAAAADAAAAAQAAAAEA
+AAABAAAABgAAAAAAAAADAAAAAQAAAAMAAAAAAAAAAgAAAAIAAAADAAAAAwAAAAMAAAABAAAAAAAA
+AAAAAAADAAAAAwAAAAMAAAACAAAAAgAAAAIAAABkAAAAZAAAARQH+D34AAABIklUU3gAAABAAAAA
+QAAAAEA=""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_mysqldate> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#dateTime> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAAOaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAYA
+AAAIAAAABwAAAAYAAAAGAAAABwAAAAgAAAAJAAAABQAAAAcAAAAJAAAABwAAAAsAAAAEAAAAZAAA
+AA5BZG9iZQNZYWhvbwMAAAAHAAAACQAAAA9BZG9iZQNBbHRhdmlzdGEDQXBwbGUgU3lzdGVtcwNC
+b3JsYW5kA0Nha2V3YWxrA0NoYW1pA0ZpbmFsZQNHb29nbGUDTGF2YXNvZnQDTHljb3MDTWFjcm9t
+ZWRpYQNNaWNyb3NvZnQDU2liZWxpdXMDWWFob28DAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAA
+AQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAE=""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_company> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAABaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAGQA
+AABkAAAAZDEgMTAgNjY4IDM0MzktMzczNgMxIDk5IDkzOCA3Mzg3LTgzNTIDAAAAFAAAABQAAAAU
+MSADAAAAZA==""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_phone> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+_:b1  a       stats:RDFStatsDataset ;
+      <http://purl.org/dc/elements/1.1/creator>
+              "dorgon@vancouver" ;
+      <http://purl.org/dc/elements/1.1/date>
+              "2009-09-10T19:28:56.626Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+      stats:sourceType stats:RDFDocument ;
+      stats:sourceUrl <file:///home/dorgon/eclipse/rdfstats/testing/datatype-samples-data.n3> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHumz97IAAAADaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI1Jlc291cmNl
+AwAAAGQAAAARAAAAAQAAAHYAAAADaHR0cDovL2V4YW1wbGUuY29tL2RhdGF0eXBlLXNhbXBsZXMt
+dm9jYWIjc2FtcGxlcwNodHRwOi8vd3d3LnczLm9yZy8yMDAwLzAxL3JkZi1zY2hlbWEjQ2xhc3MD
+AAAALAAAADMAAAA1aHR0cDovL2V4YW1wbGUuY29tL2RhdGF0eXBlLXNhbXBsZXMtdm9jYWIjc2Ft
+cGxlcwNodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjUHJvcGVydHkD
+aHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI0NsYXNzAwAAAAEAAAABAAAAAQ==""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ;
+      stats:rangeDimension
+              <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAAvaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAEA
+AAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAA
+AQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAB
+AAAAAQAAABgAAAAfAAAAZAAAAGQxMDAwIEVuaW0gUmQuA1AuTy4gQm94IDk4NCwgMjk3MSBTZWQs
+IFJkLgMAAAAPAAAAGAAAACYxMDAwAzEwOS0DMTI1NQMxMjctAzE1Mi0DMTU5LQMyNTU1AzI2Ny0D
+MjY5NQMzMDgtAzMxOTMDMzIxLQMzMzM4AzMzNy0DMzk3MgM0MDYtAzQxMy0DNDQyOQM0NjMtAzQ2
+MzADNTYwMAM1NzYtAzU3Ny0DNTgyOAM2MjU0AzY1OTgDNjgzLQM3MTc4AzcyNDcDNzI5OAM3NjEg
+Azc2MzMDNzgyLQM3OTQwAzgwMTMDODEyLQM4MTUtAzgzMC0DODUxNQM4NjIgAzg3OTcDOTA1LQM5
+NDAtAzk3MzMDOTgyNwNBcCAjA1AuTy4DAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEA
+AAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+AAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAA
+AQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAGAAAAB8=""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_street> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:SubjectHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHumz97IAAAADaHR0cDovL3d3dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI1Jlc291cmNl
+AwAAAGQAAAAWAAAAAQAAAHsAAAB7ZmlsZTovLy9Wb2x1bWVzL01lZGlhL2Rvcmdvbi1leHQvZWNs
+aXBzZS9yZGZzdGF0cy90ZXN0aW5nL3NhbXBsZXMtZGF0YS5uMyNzYW1wbGVzLzEDaHR0cDovL3d3
+dy53My5vcmcvMjAwMC8wMS9yZGYtc2NoZW1hI2xhYmVsAwAAACwAAABQAAAAV2ZpbGU6Ly8vVm9s
+dW1lcy9NZWRpYS9kb3Jnb24tZXh0L2VjbGlwc2UvcmRmc3RhdHMvdGVzdGluZy9zYW1wbGVzLWRh
+dGEubjMjc2FtcGxlcwNodHRwOi8vZXhhbXBsZS5jb20DaHR0cDovL3d3dy53My5vcmcvMjAwMC8w
+MQMAAABkAAAAFgAAAAE=""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:rangeDimension
+              <http://www.w3.org/2000/01/rdf-schema#Resource> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAAhaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAUA
+AAACAAAABAAAAAcAAAACAAAABQAAAAMAAAAFAAAAAwAAAAUAAAAEAAAAAQAAAAMAAAAEAAAAAgAA
+AAMAAAABAAAABQAAAAMAAAADAAAAAgAAAAIAAAACAAAABAAAAAEAAAABAAAABAAAAAEAAAABAAAA
+AwAAAAIAAAABAAAABgAAAGQAAABkMDA3NTkDWlI3RCA5T00DAAAABwAAAAgAAAAKMAMxAzIDMwM0
+AzUDNgM3AzgDOQNBA0IDQwNEA0UDRgNHA0gDSgNNA04DTwNQA1EDUgNTA1QDVQNWA1cDWANZA1oD
+AAAABQAAAAIAAAAEAAAABwAAAAIAAAAFAAAAAwAAAAUAAAADAAAABQAAAAQAAAABAAAAAwAAAAQA
+AAACAAAAAwAAAAEAAAAFAAAAAwAAAAMAAAACAAAAAgAAAAIAAAAEAAAAAQAAAAEAAAAEAAAAAQAA
+AAEAAAADAAAAAgAAAAEAAAAG""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_zipcode> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAAWaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAEA
+AAABAAAABAAAAAIAAAACAAAAAQAAAAwAAAABAAAABAAAAA0AAAACAAAABwAAAAgAAAAKAAAABQAA
+AAIAAAABAAAAAQAAAAgAAAAGAAAAAgAAAAcAAABkAAAAZENyYXMgcGVsbGVudGVzcXVlLiBTZWQg
+ZGljdHVtLiBQcm9pbiBlZ2V0IG9kaW8uIEFsaXF1YW0gdnVscHV0YXRlIHVsbGFtY29ycGVyIG1h
+Z25hLiBTZWQgZXUgZXJvcy4gTmFtIGNvbnNlcXVhdCBkb2xvciB2aXRhZSBkb2xvci4gRG9uZWMg
+ZnJpbmdpbGxhLiBEb25lYyBmZXVnaWF0IG1ldHVzIHNpdCBhbWV0IGFudGUuIFZpdmFtdXMgbm9u
+IGxvcmVtIHZpdGFlIG9kaW8gc2FnaXR0aXMgc2VtcGVyLiBOYW0gdGVtcG9yIGRpYW0gZGljdHVt
+IHNhcGllbi4gQWVuZWFuIG1hc3NhLiBJbnRlZ2VyIHZpdGFlIG5pYmguIERvbmVjIGVzdCBtYXVy
+aXMsIHJob25jdXMgaWQsIG1vbGxpcyBuZWMsIGN1cnN1cyBhLCBlbmltLiBTdXNwZW5kaXNzZSBh
+bGlxdWV0LCBzZW0gdXQgY3Vyc3VzIGx1Y3R1cywgaXBzdW0gbGVvIGVsZW1lbnR1bSBzZW0sIHZp
+dGFlIGFsaXF1YW0gZXJvcyB0dXJwaXMgbm9uIGVuaW0uIE1hdXJpcyBxdWlzIHR1cnBpcyB2aXRh
+ZSBwdXJ1cyBncmF2aWRhIHNhZ2l0dGlzLiBEdWlzIGdyYXZpZGEuIFByYWVzZW50IGV1IG51bGxh
+IGF0IHNlbSBtb2xlc3RpZSBzb2RhbGVzLiBNYXVyaXMgYmxhbmRpdCBlbmltIGNvbnNlcXVhdCBw
+dXJ1cy4gTWFlY2VuYXMgbGliZXJvIGVzdCwgY29uZ3VlIGEsIGFsaXF1ZXQgdmVsLCB2dWxwdXRh
+dGUgZXUsIG9kaW8uIFBoYXNlbGx1cyBhdCBhdWd1ZSBpZCBhbnRlIGRpY3R1bSBjdXJzdXMuIE51
+bmMgbWF1cmlzIGVsaXQsIGRpY3R1bSBldSwgZWxlaWZlbmQgbmVjLCBtYWxlc3VhZGEgdXQsIHNl
+bS4gTnVsbGEgaW50ZXJkdW0uIEN1cmFiaXR1ciBkaWN0dW0uIFBoYXNlbGx1cyBpbiBmZWxpcy4g
+TnVsbGEgdGVtcG9yIGF1Z3VlIGFjIGlwc3VtLiBQaGFzZWxsdXMgdml0YWUgbWF1cmlzIHNpdCBh
+bWV0IGxvcmVtIHNlbXBlciBhdWN0b3IuIE1hdXJpcyB2ZWwgdHVycGlzLiBBbGlxdWFtIGFkaXBp
+c2NpbmcgbG9ib3J0aXMgcmlzdXMuIEluIG1pIHBlZGUsIG5vbnVtbXkgdXQsIG1vbGVzdGllIGlu
+LCB0ZW1wdXMgZXUsIGxpZ3VsYS4gQWVuZWFuIGV1aXNtb2QgbWF1cmlzIGV1IGVsaXQuIE51bGxh
+IGZhY2lsaXNpLiBTZWQgbmVxdWUuIFNlZCBlZ2V0IGxhY3VzLiBNYXVyaXMgbm9uIGR1aSBuZWMg
+dXJuYSBzdXNjaXBpdCBub251bW15LiBGdXNjZSBmZXJtZW50dW0gZmVybWVudHVtIGFyY3UuIFZl
+c3RpYnVsdW0gYW50ZSBpcHN1bSBwcmltaXMgaW4gZmF1Y2lidXMgb3JjaSBsdWN0dXMgZXQgdWx0
+cmljZXMgcG9zdWVyZSBjdWJpbGlhIEN1cmFlOyBQaGFzZWxsdXMgb3JuYXJlLiBGdXNjZSBtb2xs
+aXMuIER1aXMgc2l0IGFtZXQgZGlhbSBldSBkb2xvciBlZ2VzdGFzIHJob25jdXMuIFByb2luIG5p
+c2wgc2VtLCBjb25zZXF1YXQgbmVjLCBtb2xsaXMgdml0YWUsIHBvc3VlcmUgYXQsIHZlbGl0LiBD
+cmFzIGxvcmVtIGxvcmVtLCBsdWN0dXMgdXQsIHBlbGxlbnRlc3F1ZSBlZ2V0LCBkaWN0dW0gcGxh
+Y2VyYXQsIGF1Z3VlLiBTZWQgbW9sZXN0aWUuIFNlZCBpZCByaXN1cyBxdWlzIGRpYW0gbHVjdHVz
+IGxvYm9ydGlzLiBDbGFzcyBhcHRlbnQgdGFjaXRpIHNvY2lvc3F1IGFkIGxpdG9yYSB0b3JxdWVu
+dCBwZXIgY29udWJpYSBub3N0cmEsIHBlciBpbmNlcHRvcyBoeW1lbmFlb3MuIE1hdXJpcyB1dCBx
+dWFtIHZlbCBzYXBpZW4gaW1wZXJkaWV0IG9ybmFyZS4gSW4gZmF1Y2lidXMuIE1vcmJpIHZlaGlj
+dWxhLiBQZWxsZW50ZXNxdWUgdGluY2lkdW50IHRlbXB1cyByaXN1cy4gRG9uZWMgZWdlc3Rhcy4g
+RHVpcyBhYyBhcmN1LiBOdW5jIG1hdXJpcy4gTW9yYmkgbm9uIHNhcGllbiBtb2xlc3RpZSBvcmNp
+IHRpbmNpZHVudCBhZGlwaXNjaW5nLiBNYXVyaXMgbW9sZXN0aWUgcGhhcmV0cmEgbmliaC4gQWxp
+cXVhbSBvcm5hcmUsIGxpYmVybyBhdCBhdWN0b3IgdWxsYW1jb3JwZXIsIG5pc2wgYXJjdSBpYWN1
+bGlzIGVuaW0sIHNpdCBhbWV0IG9ybmFyZSBsZWN0dXMganVzdG8gZXUgYXJjdS4gTW9yYmkgc2l0
+IGFtZXQgbWFzc2EuIFF1aXNxdWUgcG9ydHRpdG9yIGVyb3MgbmVjIHRlbGx1cy4gTnVuYyBsZWN0
+dXMgcGVkZSwgdWx0cmljZXMgYSwgYXVjdG9yIG5vbiwgZmV1Z2lhdCBuZWMsIGRpYW0uIER1aXMg
+bWkgZW5pbSwgY29uZGltZW50dW0gZWdldCwgdm9sdXRwYXQgb3JuYXJlLCBmYWNpbGlzaXMgZWdl
+dCwgaXBzdW0uIERvbmVjIHNvbGxpY2l0dWRpbiBhZGlwaXNjaW5nIGxpZ3VsYS4gQWVuZWFuIGdy
+YXZpZGEgbnVuYyBzZWQgcGVkZS4gQ3VtIHNvY2lpcyBuYXRvcXVlIHBlbmF0aWJ1cyBldCBtYWdu
+aXMgZGlzIHBhcnR1cmllbnQgbW9udGVzLCBuYXNjZXR1ciByaWRpY3VsdXMgbXVzLiBQcm9pbiB2
+ZWwgYXJjdSBldSBvZGlvIHRyaXN0aXF1ZSBwaGFyZXRyYS4gUXVpc3F1ZSBhYyBsaWJlcm8gbmVj
+IGxpZ3VsYSBjb25zZWN0ZXR1ZXIgcmhvbmN1cy4gTnVsbGFtIHZlbGl0IGR1aSwgc2VtcGVyIGV0
+LCBsYWNpbmlhIHZpdGFlLCBzb2RhbGVzIGF0LCB2ZWxpdC4gUGVsbGVudGVzcXVlIHVsdHJpY2ll
+cyBkaWduaXNzaW0gbGFjdXMuIEFsaXF1YW0gcnV0cnVtIGxvcmVtIGFjIHJpc3VzLiBNb3JiaSBt
+ZXR1cy4gVml2YW11cyBldWlzbW9kIHVybmEuIE51bGxhbSBsb2JvcnRpcyBxdWFtIGEgZmVsaXMg
+dWxsYW1jb3JwZXIgdml2ZXJyYS4gTWFlY2VuYXMgaWFjdWxpcyBhbGlxdWV0IGRpYW0uIFNlZCBk
+aWFtIGxvcmVtLCBhdWN0b3IgcXVpcywgdHJpc3RpcXVlIGFjLCBlbGVpZmVuZCB2aXRhZSwgZXJh
+dC4gVml2YW11cyBuaXNpLiBNYXVyaXMgbnVsbGEuIEludGVnZXIgdXJuYS4gVml2YW11cyBtb2xl
+c3RpZSBkYXBpYnVzIGxpZ3VsYS4gQWxpcXVhbSBlcmF0IHZvbHV0cGF0LiBOdWxsYSBkaWduaXNz
+aW0uIE1hZWNlbmFzIG9ybmFyZSBlZ2VzdGFzIGxpZ3VsYS4gTnVsbGFtIGZldWdpYXQgcGxhY2Vy
+YXQgdmVsaXQuIFF1aXNxdWUgdmFyaXVzLiBOYW0gcG9ydHRpdG9yIHNjZWxlcmlzcXVlIG5lcXVl
+LiBOdWxsYW0gbmlzbC4gTWFlY2VuYXMgbWFsZXN1YWRhIGZyaW5naWxsYSBlc3QuIE1hdXJpcyBl
+dSB0dXJwaXMuIE51bGxhIGFsaXF1ZXQuIFByb2luIHZlbGl0LiBTZWQgbWFsZXN1YWRhIGF1Z3Vl
+IHV0IGxhY3VzLiBOdWxsYSB0aW5jaWR1bnQsIG5lcXVlIHZpdGFlIHNlbXBlciBlZ2VzdGFzLCB1
+cm5hIGp1c3RvIGZhdWNpYnVzIGxlY3R1cywgYSBzb2xsaWNpdHVkaW4gb3JjaSBzZW0gZWdldCBt
+YXNzYS4gU3VzcGVuZGlzc2UgZWxlaWZlbmQuIENyYXMgc2VkIGxlby4gQ3JhcyB2ZWhpY3VsYSBh
+bGlxdWV0IGxpYmVyby4gSW50ZWdlciBpbiBtYWduYS4gUGhhc2VsbHVzIGRvbG9yIGVsaXQsIHBl
+bGxlbnRlc3F1ZSBhLCBmYWNpbGlzaXMgbm9uLCBiaWJlbmR1bSBzZWQsIGVzdC4gTnVuYyBsYW9y
+ZWV0IGxlY3R1cyBxdWlzIG1hc3NhLiBNYXVyaXMgdmVzdGlidWx1bSwgbmVxdWUgc2VkIGRpY3R1
+bSBlbGVpZmVuZCwgbnVuYyByaXN1cyB2YXJpdXMgb3JjaSwgaW4gY29uc2VxdWF0IGVuaW0gZGlh
+bSB2ZWwgYXJjdS4gQ3VyYWJpdHVyIHV0IG9kaW8gdmVsIGVzdCB0ZW1wb3IgYmliZW5kdW0uIERv
+bmVjIGZlbGlzIG9yY2ksIGFkaXBpc2Npbmcgbm9uLCBsdWN0dXMgc2l0IGFtZXQsIGZhdWNpYnVz
+IHV0LCBudWxsYS4gQ3JhcyBldSB0ZWxsdXMgZXUgYXVndWUgcG9ydHRpdG9yIGludGVyZHVtLiBT
+ZWQgYXVjdG9yIG9kaW8gYSBwdXJ1cy4gRHVpcyBlbGVtZW50dW0sIGR1aSBxdWlzIGFjY3Vtc2Fu
+IGNvbnZhbGxpcywgYW50ZSBsZWN0dXMgY29udmFsbGlzIGVzdCwgdml0YWUgc29kYWxlcyBuaXNp
+IG1hZ25hIHNlZCBkdWkuIEZ1c2NlIGFsaXF1YW0sIGVuaW0gbmVjIHRlbXB1cyBzY2VsZXJpc3F1
+ZSwgbG9yZW0gaXBzdW0gc29kYWxlcyBwdXJ1cywgaW4gbW9sZXN0aWUgdG9ydG9yIG5pYmggc2l0
+IGFtZXQgb3JjaS4gVXQgc2FnaXR0aXMgbG9ib3J0aXMgbWF1cmlzLiBTdXNwZW5kaXNzZSBhbGlx
+dWV0IG1vbGVzdGllIHRlbGx1cy4gQWVuZWFuIGVnZXN0YXMgaGVuZHJlcml0IG5lcXVlLiBJbiBv
+cm5hcmUgc2FnaXR0aXMgZmVsaXMuIERvbmVjIHRlbXBvciwgZXN0IGFjIG1hdHRpcyBzZW1wZXIs
+IGR1aSBsZWN0dXMgcnV0cnVtIHVybmEsIG5lYyBsdWN0dXMgZmVsaXMgcHVydXMgYWMgdGVsbHVz
+LiBTdXNwZW5kaXNzZSBzZWQgZG9sb3IuIEZ1c2NlIG1pIGxvcmVtLCB2ZWhpY3VsYSBldCwgcnV0
+cnVtIGV1LCB1bHRyaWNlcyBzaXQgYW1ldCwgcmlzdXMuIERvbmVjIG5pYmggZW5pbSwgZ3Jhdmlk
+YSBzaXQgYW1ldCwgZGFwaWJ1cyBpZCwgYmxhbmRpdCBhdCwgbmlzaS4gQ3VtIHNvY2lpcyBuYXRv
+cXVlIHBlbmF0aWJ1cyBldCBtYWduaXMgZGlzIHBhcnR1cmllbnQgbW9udGVzLCBuYXNjZXR1ciBy
+aWRpY3VsdXMgbXVzLiBQcm9pbiB2ZWwgbmlzbC4gUXVpc3F1ZSBmcmluZ2lsbGEgZXVpc21vZCBl
+bmltLiBFdGlhbSBncmF2aWRhIG1vbGVzdGllIGFyY3UuIFNlZCBldSBuaWJoIHZ1bHB1dGF0ZSBt
+YXVyaXMgc2FnaXR0aXMgcGxhY2VyYXQuIENyYXMgZGljdHVtIHVsdHJpY2llcyBsaWd1bGEuIE51
+bGxhbSBlbmltLiBTZWQgbnVsbGEgYW50ZSwgaWFjdWxpcyBuZWMsIGVsZWlmZW5kIG5vbiwgZGFw
+aWJ1cyBydXRydW0sIGp1c3RvLiBQcmFlc2VudCBsdWN0dXMuIEN1cmFiaXR1ciBlZ2VzdGFzIG51
+bmMgc2VkIGxpYmVyby4gUHJvaW4gc2VkIHR1cnBpcyBuZWMgbWF1cmlzIGJsYW5kaXQgbWF0dGlz
+LiBDcmFzIGVnZXQgbmlzaSBkaWN0dW0gYXVndWUgbWFsZXN1YWRhIG1hbGVzdWFkYS4gSW50ZWdl
+ciBpZCBtYWduYSBldCBpcHN1bSBjdXJzdXMgdmVzdGlidWx1bS4gTWF1cmlzIG1hZ25hLiBEdWlz
+IGRpZ25pc3NpbSB0ZW1wb3IgYXJjdS4gVmVzdGlidWx1bSB1dAN2dWxwdXRhdGUgZXUsIG9kaW8u
+IFBoYXNlbGx1cyBhdCBhdWd1ZSBpZCBhbnRlIGRpY3R1bSBjdXJzdXMuIE51bmMgbWF1cmlzIGVs
+aXQsIGRpY3R1bSBldSwgZWxlaWZlbmQgbmVjLCBtYWxlc3VhZGEgdXQsIHNlbS4gTnVsbGEgaW50
+ZXJkdW0uIEN1cmFiaXR1ciBkaWN0dW0uIFBoYXNlbGx1cyBpbiBmZWxpcy4gTnVsbGEgdGVtcG9y
+IGF1Z3VlIGFjIGlwc3VtLiBQaGFzZWxsdXMgdml0YWUgbWF1cmlzIHNpdCBhbWV0IGxvcmVtIHNl
+bXBlciBhdWN0b3IuIE1hdXJpcyB2ZWwgdHVycGlzLiBBbGlxdWFtIGFkaXBpc2NpbmcgbG9ib3J0
+aXMgcmlzdXMuIEluIG1pIHBlZGUsIG5vbnVtbXkgdXQsIG1vbGVzdGllIGluLCB0ZW1wdXMgZXUs
+IGxpZ3VsYS4gQWVuZWFuIGV1aXNtb2QgbWF1cmlzIGV1IGVsaXQuIE51bGxhIGZhY2lsaXNpLiBT
+ZWQgbmVxdWUuIFNlZCBlZ2V0IGxhY3VzLiBNYXVyaXMgbm9uIGR1aSBuZWMgdXJuYSBzdXNjaXBp
+dCBub251bW15LiBGdXNjZSBmZXJtZW50dW0gZmVybWVudHVtIGFyY3UuIFZlc3RpYnVsdW0gYW50
+ZSBpcHN1bSBwcmltaXMgaW4gZmF1Y2lidXMgb3JjaSBsdWN0dXMgZXQgdWx0cmljZXMgcG9zdWVy
+ZSBjdWJpbGlhIEN1cmFlOyBQaGFzZWxsdXMgb3JuYXJlLiBGdXNjZSBtb2xsaXMuIER1aXMgc2l0
+IGFtZXQgZGlhbSBldSBkb2xvciBlZ2VzdGFzIHJob25jdXMuIFByb2luIG5pc2wgc2VtLCBjb25z
+ZXF1YXQgbmVjLCBtb2xsaXMgdml0YWUsIHBvc3VlcmUgYXQsIHZlbGl0LiBDcmFzIGxvcmVtIGxv
+cmVtLCBsdWN0dXMgdXQsIHBlbGxlbnRlc3F1ZSBlZ2V0LCBkaWN0dW0gcGxhY2VyYXQsIGF1Z3Vl
+LiBTZWQgbW9sZXN0aWUuIFNlZCBpZCByaXN1cyBxdWlzIGRpYW0gbHVjdHVzIGxvYm9ydGlzLiBD
+bGFzcyBhcHRlbnQgdGFjaXRpIHNvY2lvc3F1IGFkIGxpdG9yYSB0b3JxdWVudCBwZXIgY29udWJp
+YSBub3N0cmEsIHBlciBpbmNlcHRvcyBoeW1lbmFlb3MuIE1hdXJpcyB1dCBxdWFtIHZlbCBzYXBp
+ZW4gaW1wZXJkaWV0IG9ybmFyZS4gSW4gZmF1Y2lidXMuIE1vcmJpIHZlaGljdWxhLiBQZWxsZW50
+ZXNxdWUgdGluY2lkdW50IHRlbXB1cyByaXN1cy4gRG9uZWMgZWdlc3Rhcy4gRHVpcyBhYyBhcmN1
+LiBOdW5jIG1hdXJpcy4gTW9yYmkgbm9uIHNhcGllbiBtb2xlc3RpZSBvcmNpIHRpbmNpZHVudCBh
+ZGlwaXNjaW5nLiBNYXVyaXMgbW9sZXN0aWUgcGhhcmV0cmEgbmliaC4gQWxpcXVhbSBvcm5hcmUs
+IGxpYmVybyBhdCBhdWN0b3IgdWxsYW1jb3JwZXIsIG5pc2wgYXJjdSBpYWN1bGlzIGVuaW0sIHNp
+dCBhbWV0IG9ybmFyZSBsZWN0dXMganVzdG8gZXUgYXJjdS4gTW9yYmkgc2l0IGFtZXQgbWFzc2Eu
+IFF1aXNxdWUgcG9ydHRpdG9yIGVyb3MgbmVjIHRlbGx1cy4gTnVuYyBsZWN0dXMgcGVkZSwgdWx0
+cmljZXMgYSwgYXVjdG9yIG5vbiwgZmV1Z2lhdCBuZWMsIGRpYW0uIER1aXMgbWkgZW5pbSwgY29u
+ZGltZW50dW0gZWdldCwgdm9sdXRwYXQgb3JuYXJlLCBmYWNpbGlzaXMgZWdldCwgaXBzdW0uIERv
+bmVjIHNvbGxpY2l0dWRpbiBhZGlwaXNjaW5nIGxpZ3VsYS4gQWVuZWFuIGdyYXZpZGEgbnVuYyBz
+ZWQgcGVkZS4gQ3VtIHNvY2lpcyBuYXRvcXVlIHBlbmF0aWJ1cyBldCBtYWduaXMgZGlzIHBhcnR1
+cmllbnQgbW9udGVzLCBuYXNjZXR1ciByaWRpY3VsdXMgbXVzLiBQcm9pbiB2ZWwgYXJjdSBldSBv
+ZGlvIHRyaXN0aXF1ZSBwaGFyZXRyYS4gUXVpc3F1ZSBhYyBsaWJlcm8gbmVjIGxpZ3VsYSBjb25z
+ZWN0ZXR1ZXIgcmhvbmN1cy4gTnVsbGFtIHZlbGl0IGR1aSwgc2VtcGVyIGV0LCBsYWNpbmlhIHZp
+dGFlLCBzb2RhbGVzIGF0LCB2ZWxpdC4gUGVsbGVudGVzcXVlIHVsdHJpY2llcyBkaWduaXNzaW0g
+bGFjdXMuIEFsaXF1YW0gcnV0cnVtIGxvcmVtIGFjIHJpc3VzLiBNb3JiaSBtZXR1cy4gVml2YW11
+cyBldWlzbW9kIHVybmEuIE51bGxhbSBsb2JvcnRpcyBxdWFtIGEgZmVsaXMgdWxsYW1jb3JwZXIg
+dml2ZXJyYS4gTWFlY2VuYXMgaWFjdWxpcyBhbGlxdWV0IGRpYW0uIFNlZCBkaWFtIGxvcmVtLCBh
+dWN0b3IgcXVpcywgdHJpc3RpcXVlIGFjLCBlbGVpZmVuZCB2aXRhZSwgZXJhdC4gVml2YW11cyBu
+aXNpLiBNYXVyaXMgbnVsbGEuIEludGVnZXIgdXJuYS4gVml2YW11cyBtb2xlc3RpZSBkYXBpYnVz
+IGxpZ3VsYS4gQWxpcXVhbSBlcmF0IHZvbHV0cGF0LiBOdWxsYSBkaWduaXNzaW0uIE1hZWNlbmFz
+IG9ybmFyZSBlZ2VzdGFzIGxpZ3VsYS4gTnVsbGFtIGZldWdpYXQgcGxhY2VyYXQgdmVsaXQuIFF1
+aXNxdWUgdmFyaXVzLiBOYW0gcG9ydHRpdG9yIHNjZWxlcmlzcXVlIG5lcXVlLiBOdWxsYW0gbmlz
+bC4gTWFlY2VuYXMgbWFsZXN1YWRhIGZyaW5naWxsYSBlc3QuIE1hdXJpcyBldSB0dXJwaXMuIE51
+bGxhIGFsaXF1ZXQuIFByb2luIHZlbGl0LiBTZWQgbWFsZXN1YWRhIGF1Z3VlIHV0IGxhY3VzLiBO
+dWxsYSB0aW5jaWR1bnQsIG5lcXVlIHZpdGFlIHNlbXBlciBlZ2VzdGFzLCB1cm5hIGp1c3RvIGZh
+dWNpYnVzIGxlY3R1cywgYSBzb2xsaWNpdHVkaW4gb3JjaSBzZW0gZWdldCBtYXNzYS4gU3VzcGVu
+ZGlzc2UgZWxlaWZlbmQuIENyYXMgc2VkIGxlby4gQ3JhcyB2ZWhpY3VsYSBhbGlxdWV0IGxpYmVy
+by4gSW50ZWdlciBpbiBtYWduYS4gUGhhc2VsbHVzIGRvbG9yIGVsaXQsIHBlbGxlbnRlc3F1ZSBh
+LCBmYWNpbGlzaXMgbm9uLCBiaWJlbmR1bSBzZWQsIGVzdC4gTnVuYyBsYW9yZWV0IGxlY3R1cyBx
+dWlzIG1hc3NhLiBNYXVyaXMgdmVzdGlidWx1bSwgbmVxdWUgc2VkIGRpY3R1bSBlbGVpZmVuZCwg
+bnVuYyByaXN1cyB2YXJpdXMgb3JjaSwgaW4gY29uc2VxdWF0IGVuaW0gZGlhbSB2ZWwgYXJjdS4g
+Q3VyYWJpdHVyIHV0IG9kaW8gdmVsIGVzdCB0ZW1wb3IgYmliZW5kdW0uIERvbmVjIGZlbGlzIG9y
+Y2ksIGFkaXBpc2Npbmcgbm9uLCBsdWN0dXMgc2l0IGFtZXQsIGZhdWNpYnVzIHV0LCBudWxsYS4g
+Q3JhcyBldSB0ZWxsdXMgZXUgYXVndWUgcG9ydHRpdG9yIGludGVyZHVtLiBTZWQgYXVjdG9yIG9k
+aW8gYSBwdXJ1cy4gRHVpcyBlbGVtZW50dW0sIGR1aSBxdWlzIGFjY3Vtc2FuIGNvbnZhbGxpcywg
+YW50ZSBsZWN0dXMgY29udmFsbGlzIGVzdCwgdml0YWUgc29kYWxlcyBuaXNpIG1hZ25hIHNlZCBk
+dWkuIEZ1c2NlIGFsaXF1YW0sIGVuaW0gbmVjIHRlbXB1cyBzY2VsZXJpc3F1ZSwgbG9yZW0gaXBz
+dW0gc29kYWxlcyBwdXJ1cywgaW4gbW9sZXN0aWUgdG9ydG9yIG5pYmggc2l0IGFtZXQgb3JjaS4g
+VXQgc2FnaXR0aXMgbG9ib3J0aXMgbWF1cmlzLiBTdXNwZW5kaXNzZSBhbGlxdWV0IG1vbGVzdGll
+IHRlbGx1cy4gQWVuZWFuIGVnZXN0YXMgaGVuZHJlcml0IG5lcXVlLiBJbiBvcm5hcmUgc2FnaXR0
+aXMgZmVsaXMuIERvbmVjIHRlbXBvciwgZXN0IGFjIG1hdHRpcyBzZW1wZXIsIGR1aSBsZWN0dXMg
+cnV0cnVtIHVybmEsIG5lYyBsdWN0dXMgZmVsaXMgcHVydXMgYWMgdGVsbHVzLiBTdXNwZW5kaXNz
+ZSBzZWQgZG9sb3IuIEZ1c2NlIG1pIGxvcmVtLCB2ZWhpY3VsYSBldCwgcnV0cnVtIGV1LCB1bHRy
+aWNlcyBzaXQgYW1ldCwgcmlzdXMuIERvbmVjIG5pYmggZW5pbSwgZ3JhdmlkYSBzaXQgYW1ldCwg
+ZGFwaWJ1cyBpZCwgYmxhbmRpdCBhdCwgbmlzaS4gQ3VtIHNvY2lpcyBuYXRvcXVlIHBlbmF0aWJ1
+cyBldCBtYWduaXMgZGlzIHBhcnR1cmllbnQgbW9udGVzLCBuYXNjZXR1ciByaWRpY3VsdXMgbXVz
+LiBQcm9pbiB2ZWwgbmlzbC4gUXVpc3F1ZSBmcmluZ2lsbGEgZXVpc21vZCBlbmltLiBFdGlhbSBn
+cmF2aWRhIG1vbGVzdGllIGFyY3UuIFNlZCBldSBuaWJoIHZ1bHB1dGF0ZSBtYXVyaXMgc2FnaXR0
+aXMgcGxhY2VyYXQuIENyYXMgZGljdHVtIHVsdHJpY2llcyBsaWd1bGEuIE51bGxhbSBlbmltLiBT
+ZWQgbnVsbGEgYW50ZSwgaWFjdWxpcyBuZWMsIGVsZWlmZW5kIG5vbiwgZGFwaWJ1cyBydXRydW0s
+IGp1c3RvLiBQcmFlc2VudCBsdWN0dXMuIEN1cmFiaXR1ciBlZ2VzdGFzIG51bmMgc2VkIGxpYmVy
+by4gUHJvaW4gc2VkIHR1cnBpcyBuZWMgbWF1cmlzIGJsYW5kaXQgbWF0dGlzLiBDcmFzIGVnZXQg
+bmlzaSBkaWN0dW0gYXVndWUgbWFsZXN1YWRhIG1hbGVzdWFkYS4gSW50ZWdlciBpZCBtYWduYSBl
+dCBpcHN1bSBjdXJzdXMgdmVzdGlidWx1bS4gTWF1cmlzIG1hZ25hLiBEdWlzIGRpZ25pc3NpbSB0
+ZW1wb3IgYXJjdS4gVmVzdGlidWx1bSB1dCBlcm9zIG5vbiBlbmltIGNvbW1vZG8gaGVuZHJlcml0
+LiBEb25lYyBwb3J0dGl0b3IgdGVsbHVzIG5vbiBtYWduYS4gTmFtIGxpZ3VsYSBlbGl0LCBwcmV0
+aXVtIGV0LCBydXRydW0gbm9uLCBoZW5kcmVyaXQgaWQsIGFudGUuIE51bmMgbWF1cmlzIHNhcGll
+biwgY3Vyc3VzIGluLCBoZW5kcmVyaXQgY29uc2VjdGV0dWVyLCBjdXJzdXMgZXQsIG1hZ25hLiBQ
+cmFlc2VudCBpbnRlcmR1bSBsaWd1bGEgZXUgZW5pbS4gRXRpYW0gaW1wZXJkaWV0IGRpY3R1bSBt
+YWduYS4gVXQgdGluY2lkdW50IG9yY2kgcXVpcyBsZWN0dXMuIE51bGxhbSBzdXNjaXBpdCwgZXN0
+IGFjIGZhY2lsaXNpcyBmYWNpbGlzaXMsIG1hZ25hIHRlbGx1cyBmYXVjaWJ1cyBsZW8sIGluIGxv
+Ym9ydGlzIHRlbGx1cyBqdXN0byBzaXQgYW1ldCBudWxsYS4gRG9uZWMgbm9uIGp1c3RvLiBQcm9p
+biBub24gbWFzc2Egbm9uIGFudGUgYmliZW5kdW0gdWxsYW1jb3JwZXIuIER1aXMgY3Vyc3VzLCBk
+aWFtIGF0IHByZXRpdW0gYWxpcXVldCwgbWV0dXMgdXJuYSBjb252YWxsaXMgZXJhdCwgZWdldCB0
+aW5jaWR1bnQgZHVpIGF1Z3VlIGV1IHRlbGx1cy4gUGhhc2VsbHVzIGVsaXQgcGVkZSwgbWFsZXN1
+YWRhIHZlbCwgdmVuZW5hdGlzIHZlbCwgZmF1Y2lidXMgaWQsIGxpYmVyby4gRG9uZWMgY29uc2Vj
+dGV0dWVyIG1hdXJpcyBpZCBzYXBpZW4uIENyYXMgZG9sb3IgZG9sb3IsIHRlbXB1cyBub24sIGxh
+Y2luaWEgYXQsIGlhY3VsaXMgcXVpcywgcGVkZS4gUHJhZXNlbnQgZXUgZHVpLiBDdW0gc29jaWlz
+IG5hdG9xdWUgcGVuYXRpYnVzIGV0IG1hZ25pcyBkaXMgcGFydHVyaWVudCBtb250ZXMsIG5hc2Nl
+dHVyIHJpZGljdWx1cyBtdXMuIEFlbmVhbiBlZ2V0IG1hZ25hLiBTdXNwZW5kaXNzZSB0cmlzdGlx
+dWUgbmVxdWUgdmVuZW5hdGlzIGxhY3VzLiBFdGlhbSBiaWJlbmR1bSBmZXJtZW50dW0gbWV0dXMu
+IEFlbmVhbiBzZWQgcGVkZSBuZWMgYW50ZSBibGFuZGl0IHZpdmVycmEuIERvbmVjIHRlbXB1cywg
+bG9yZW0gZnJpbmdpbGxhIG9ybmFyZSBwbGFjZXJhdCwgb3JjaSBsYWN1cyB2ZXN0aWJ1bHVtIGxv
+cmVtLCBzaXQgYW1ldCB1bHRyaWNpZXMgc2VtIG1hZ25hIG5lYyBxdWFtLiBDdXJhYml0dXIgdmVs
+IGxlY3R1cy4gQ3VtIHNvY2lpcyBuYXRvcXVlIHBlbmF0aWJ1cyBldCBtYWduaXMgZGlzIHBhcnR1
+cmllbnQgbW9udGVzLCBuYXNjZXR1ciByaWRpY3VsdXMgbXVzLiBEb25lYyBkaWduaXNzaW0gbWFn
+bmEgYSB0b3J0b3IuIE51bmMgY29tbW9kbyBhdWN0b3IgdmVsaXQuIEFsaXF1YW0gbmlzbC4gTnVs
+bGEgZXUgbmVxdWUgcGVsbGVudGVzcXVlIG1hc3NhIGxvYm9ydGlzIHVsdHJpY2VzLiBWaXZhbXVz
+IHJob25jdXMuIERvbmVjIGVzdC4gTnVuYyB1bGxhbWNvcnBlciwgdmVsaXQgaW4gYWxpcXVldCBs
+b2JvcnRpcywgbmlzaSBuaWJoIGxhY2luaWEgb3JjaSwgY29uc2VjdGV0dWVyIGV1aXNtb2QgZXN0
+IGFyY3UgYWMgb3JjaS4gVXQgc2VtcGVyIHByZXRpdW0gbmVxdWUuIE1vcmJpIHF1aXMgdXJuYS4g
+TnVuYyBxdWlzIGFyY3UgdmVsIHF1YW0gZGlnbmlzc2ltIHBoYXJldHJhLiBOYW0gYWMgbnVsbGEu
+IEluIHRpbmNpZHVudCBjb25ndWUgdHVycGlzLiBJbiBjb25kaW1lbnR1bS4gRG9uZWMgYXQgYXJj
+dS4gVmVzdGlidWx1bSBhbnRlIGlwc3VtIHByaW1pcyBpbiBmYXVjaWJ1cyBvcmNpIGx1Y3R1cyBl
+dCB1bHRyaWNlcyBwb3N1ZXJlIGN1YmlsaWEgQ3VyYWU7IERvbmVjIHRpbmNpZHVudC4gRG9uZWMg
+dml0YWUgZXJhdCB2ZWwgcGVkZSBibGFuZGl0IGNvbmd1ZS4gSW4gc2NlbGVyaXNxdWUgc2NlbGVy
+aXNxdWUgZHVpLiBTdXNwZW5kaXNzZSBhYyBtZXR1cyB2aXRhZSB2ZWxpdCBlZ2VzdGFzIGxhY2lu
+aWEuIFNlZCBjb25ndWUsIGVsaXQgc2VkIGNvbnNlcXVhdCBhdWN0b3IsIG51bmMgbnVsbGEgdnVs
+cHV0YXRlIGR1aSwgbmVjIHRlbXB1cyBtYXVyaXMgZXJhdCBlZ2V0IGlwc3VtLiBTdXNwZW5kaXNz
+ZSBzYWdpdHRpcy4gTnVsbGFtIHZpdGFlIGRpYW0uIFByb2luIGRvbG9yLiBOdWxsYSBzZW1wZXIg
+dGVsbHVzIGlkIG51bmMgaW50ZXJkdW0gZmV1Z2lhdC4gU2VkIG5lYyBtZXR1cyBmYWNpbGlzaXMg
+bG9yZW0gdHJpc3RpcXVlIGFsaXF1ZXQuIFBoYXNlbGx1cyBmZXJtZW50dW0gY29udmFsbGlzIGxp
+Z3VsYS4gRG9uZWMgbHVjdHVzIGFsaXF1ZXQgb2Rpby4gRXRpYW0gbGlndWxhIHRvcnRvciwgZGlj
+dHVtIGV1LCBwbGFjZXJhdCBlZ2V0LCB2ZW5lbmF0aXMgYSwgbWFnbmEuIExvcmVtIGlwc3VtIGRv
+bG9yIHNpdCBhbWV0LCBjb25zZWN0ZXR1ZXIgYWRpcGlzY2luZyBlbGl0LiBFdGlhbSBsYW9yZWV0
+LCBsaWJlcm8gZXQgdHJpc3RpcXVlIHBlbGxlbnRlc3F1ZSwgdGVsbHVzIHNlbSBtb2xsaXMgZHVp
+LCBpbiBzb2RhbGVzIGVsaXQgZXJhdCB2aXRhZSByaXN1cy4gRHVpcyBhIG1pIGZyaW5naWxsYSBt
+aSBsYWNpbmlhIG1hdHRpcy4gSW50ZWdlciBldSBsYWN1cy4gUXVpc3F1ZSBpbXBlcmRpZXQsIGVy
+YXQgbm9udW1teQMAAACLAAANAgAAGj1DA00DTgNQA1MDVgNhA2MDZANlA2kDbANtA24DbwNwA3ED
+cgNzA3QDdQN2AwAAAAEAAAABAAAABAAAAAIAAAACAAAAAQAAAAwAAAABAAAABAAAAA0AAAACAAAA
+BwAAAAgAAAAKAAAABQAAAAIAAAABAAAAAQAAAAgAAAAGAAAAAgAAAAc=""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_words> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHpMy9AQAAAAyaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjaW50AwAAAAIAAAAC
+AAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIA
+AAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAA
+AAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAA
+AgAAAAIAAAACAAAAAgAAAAIAAAACAAAAZAAAAGQAAAABAAAAZAAAACkAAAApAAAAKw==""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_id> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#int> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAAZaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAkA
+AAAJAAAABwAAAAYAAAACAAAAAwAAAAUAAAAHAAAABAAAAAQAAAAHAAAABwAAAAIAAAADAAAABgAA
+AAEAAAABAAAABAAAAAQAAAABAAAAAQAAAAQAAAABAAAAAQAAAAEAAABkAAAAZEFiZWwgUG93ZWxs
+A2FjcXVlbGluZSBFc3RlcwMAAAAKAAAADgAAABNBA0IDQwNEA0UDRgNHA0gDSQNKA0sDTANNA04D
+TwNQA1EDUgNTA1UDVgNXA1kDWgNhAwAAAAkAAAAJAAAABwAAAAYAAAACAAAAAwAAAAUAAAAHAAAA
+BAAAAAQAAAAHAAAABwAAAAIAAAADAAAABgAAAAEAAAABAAAABAAAAAQAAAABAAAAAQAAAAQAAAAB
+AAAAAQAAAAE=""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_personname> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:SubjectHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHhCQ2RAAAAABaHR0cDovL3B1cmwub3JnL3JkZnN0YXRzL3N0YXRzI2JsYW5rTm9kZQMAAAAA
+AAAAAAAAAAAAAAAAAAAAAA==""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:rangeDimension
+              stats:blankNode .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAACaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAEA
+AAABAAAAAgAAAAJhc2RmA2ZvbwMAAAAFAAAABQAAAAZhc2RmA2ZvbwMAAAABAAAAAQ==""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://www.w3.org/2000/01/rdf-schema#comment> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjiJyu4AAAACaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjYm9vbGVhbgMAAABI
+AAAAHAAAAGQAAAACAAAAMAAAADAAAAAx""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_registered> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#boolean> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAASaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAEA
+AAADAAAABwAAAAYAAAAFAAAABQAAAAUAAAAIAAAABwAAAAMAAAAFAAAACAAAAAUAAAAFAAAABAAA
+ABQAAAACAAAAAQAAAGQAAAASaHR0cDovL2RicGVkaWEub3JnA2h0dHA6Ly93d3cud2lraXBlZGlh
+Lm9yZwMAAAATAAAAJAAAACtodHRwOi8vZGJwZWRpYS5vcmcDaHR0cDovL2RicGVkaWEub3JnL3Jl
+c291cmNlL0Fkb2JlA2h0dHA6Ly9kYnBlZGlhLm9yZy9yZXNvdXJjZS9BbHRhdmlzdGEDaHR0cDov
+L2RicGVkaWEub3JnL3Jlc291cmNlL0FwcGxlX1N5c3RlbXMDaHR0cDovL2RicGVkaWEub3JnL3Jl
+c291cmNlL0JvcmxhbmQDaHR0cDovL2RicGVkaWEub3JnL3Jlc291cmNlL0Nha2V3YWxrA2h0dHA6
+Ly9kYnBlZGlhLm9yZy9yZXNvdXJjZS9DaGFtaQNodHRwOi8vZGJwZWRpYS5vcmcvcmVzb3VyY2Uv
+RmluYWxlA2h0dHA6Ly9kYnBlZGlhLm9yZy9yZXNvdXJjZS9Hb29nbGUDaHR0cDovL2RicGVkaWEu
+b3JnL3Jlc291cmNlL0xhdmFzb2Z0A2h0dHA6Ly9kYnBlZGlhLm9yZy9yZXNvdXJjZS9MeWNvcwNo
+dHRwOi8vZGJwZWRpYS5vcmcvcmVzb3VyY2UvTWFjcm9tZWRpYQNodHRwOi8vZGJwZWRpYS5vcmcv
+cmVzb3VyY2UvTWljcm9zb2Z0A2h0dHA6Ly9kYnBlZGlhLm9yZy9yZXNvdXJjZS9TaWJlbGl1cwNo
+dHRwOi8vZGJwZWRpYS5vcmcvcmVzb3VyY2UvWWFob28DaHR0cDovL3NlbXdpcS5mYXcudW5pLWxp
+bnouYWMuYXQDaHR0cDovL3d3dy5qa3UuYXQDaHR0cDovL3d3dy53aWtpcGVkaWEub3JnAwAAAAEA
+AAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAA
+AAEAAAABAAAAAQ==""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_url> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAAVaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAgA
+AAAGAAAABQAAAAQAAAAFAAAABAAAAAEAAAACAAAAAQAAAAEAAAABAAAABgAAAAUAAAAGAAAABQAA
+AAUAAAAIAAAACgAAAAYAAAAGAAAABQAAAGQAAABdQWJlcmRlZW4DV2lubmVtdWNjYQMAAAAGAAAA
+CwAAABdBA0IDQwNEA0UDRgNHA0gDSQNKA0sDTANNA04DTwNQA1IDUwNUA1YDVwMAAAAHAAAABQAA
+AAUAAAAEAAAABQAAAAQAAAABAAAAAgAAAAEAAAABAAAAAQAAAAYAAAAFAAAABQAAAAUAAAADAAAA
+BwAAAAoAAAAGAAAABgAAAAQ=""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_city> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHgydkOIAAAAyaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjZmxvYXQDAAAAAQAA
+AAQAAAACAAAAAgAAAAIAAAAAAAAAAgAAAAQAAAACAAAAAgAAAAIAAAAAAAAAAgAAAAQAAAACAAAA
+AgAAAAAAAAACAAAAAgAAAAQAAAACAAAAAgAAAAAAAAACAAAABAAAAAIAAAACAAAAAAAAAAIAAAAC
+AAAABAAAAAIAAAACAAAAAAAAAAIAAAACAAAABAAAAAIAAAAAAAAAAgAAAAIAAAACAAAABAAAAAIA
+AAAAAAAAAgAAAAIAAAAEAAAAAgAAAAEAAABkAAAAM0BCyGBApvTcAAAALQAAADAAAAAx""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_floatnumber> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#float> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAACaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAGQA
+AAAFAAAAaQAAAGlzYW1wbGVzICMxA3VudHlwZWQgcmVzb3VyY2UgNQMAAAAMAAAADQAAABRzYW1w
+bGVzICMDdW50eXBlZCByAwAAAGQAAAAF""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://www.w3.org/2000/01/rdf-schema#label> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHjMuamQAAAAbaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nAwAAAAEA
+AAABAAAAAwAAAAEAAAACAAAAAQAAAAIAAAABAAAABAAAAAQAAAAFAAAABgAAAAUAAAABAAAAAgAA
+AAUAAAAKAAAACwAAAAgAAAAEAAAAAwAAAAEAAAAEAAAABwAAAAQAAAACAAAAAgAAAGQAAABkQ3Vy
+YWJpdHVyLmRpY3R1bS5QaGFzZWxsdXNAYWxpcXVldC5jYQN2aXRhZUByaXN1c1F1aXNxdWUuY2ED
+AAAADwAAAB4AAAAvQwNEA0UDRgNJA00DUwNWA2EDYwNkA2UDZgNnA2gDaQNsA20DbgNvA3ADcQNy
+A3MDdAN1A3YDAAAAAQAAAAEAAAADAAAAAQAAAAIAAAABAAAAAgAAAAEAAAAEAAAABAAAAAUAAAAG
+AAAABQAAAAEAAAACAAAABQAAAAoAAAALAAAACAAAAAQAAAADAAAAAQAAAAQAAAAHAAAABAAAAAIA
+AAAC""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_mbox> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#string> .
+
+[]    a       stats:PropertyHistogram ;
+      <http://www.w3.org/1999/02/22-rdf-syntax-ns#value>
+              """ATKQHpMy9AQAAAAyaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjaW50AwAAAAMAAAAC
+AAAAAwAAAAIAAAAEAAAAAQAAAAEAAAABAAAAAwAAAAIAAAADAAAAAQAAAAIAAAAAAAAAAwAAAAQA
+AAABAAAAAAAAAAAAAAADAAAAAwAAAAUAAAACAAAAAQAAAAAAAAAAAAAAAwAAAAIAAAAEAAAAAgAA
+AAIAAAABAAAAAgAAAAAAAAAEAAAAAgAAAAIAAAACAAAAAQAAAAIAAAACAAAAAgAAAAIAAAACAAAA
+AQAAAAMAAAACAAAAAgAAAAMAAAACAAAAZAAAAGAAAAAfAAAD0wAAACoAAAAqAAAAKw==""" ;
+      <http://purl.org/NET/scovo#dataset>
+              _:b1 ;
+      stats:propertyDimension
+              <http://example.com/datatype-samples-vocab#samples_intnumber> ;
+      stats:rangeDimension
+              <http://www.w3.org/2001/XMLSchema#int> .

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration debug="false">
+
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+	  <layout class="ch.qos.logback.classic.PatternLayout">
+	    <Pattern>%date{HH:mm:ss.SSS} %-6level [%-40.40logger{40}] %msg%n</Pattern>
+	  </layout>
+	</appender>
+
+	<logger name="rdfstats">
+	    <level value="INFO"/> 
+	</logger>
+	<logger name="at.jku.rdfstats">
+	    <level value="DEBUG"/> 
+	</logger>
+	<logger name="com.hp.hpl">
+		<level value="INFO"/>
+	</logger>
+	<logger name="com.hp.hpl.jena.util.LocationMapper">
+		<level value="DEBUG"/>
+	</logger>
+	<logger name="org.apache">
+	    <level value="INFO"/> 
+	</logger>
+	<logger name="org.joseki">
+		<level value="WARN"/>
+	</logger>
+	<root>
+		<level value="WARN" />
+		<appender-ref ref="stdout" />
+	</root>
+</configuration>

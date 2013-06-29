@@ -1,0 +1,12 @@
+#!/bin/bash
+SEP=':'
+if [[ "$(uname)" =~ CYGWIN* ]]; then SEP=';'; fi
+CP="lib/logback/$SEP./rdfstats.jar"
+
+for jar in lib/*.jar
+do
+  if [ ! -e "$jar" ]; then continue; fi
+  CP="$CP$SEP$jar"
+done
+
+exec java -cp "$CP" -Xmx256M rdfstats.decode "$@"

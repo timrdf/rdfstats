@@ -1,0 +1,108 @@
+@ Query 1 (spo)
+# all triples
+SELECT * WHERE { ?s ?p ?o }
+
+@ Query 2 (spO)
+# aggregate estimated value from all histograms
+SELECT * WHERE { ?s ?p "turgescence retrospection" }
+
+@ Query 3 (spO)
+# no histogram has such a value
+SELECT * WHERE { ?s ?p "NotExists" }
+
+@ Query 4 (sPo)
+# all values in histogram for rdfs:label
+SELECT * WHERE { ?s rdfs:label ?o }
+
+@ Query 5 (sPO)
+# specific value in histogram for rdfs:label
+SELECT * WHERE { ?s rdfs:label "turgescence retrospection" }
+
+@ Query 6 (sPO)
+# no value "NotExists" in histogram for rdfs:label
+SELECT * WHERE { ?s rdfs:label "NotExists" }
+
+@ Query 7 (sPO)
+# property not exists
+SELECT * WHERE { ?s rdf:unknownProperty ?o }
+
+@ Query 8 (Spo)
+# all triples / number of distinct subjects = avg triples/subject
+SELECT * WHERE { producer1:Product1 ?p ?o }
+
+@ Query 9 (SpO)
+# specific value from all histograms / number of distinct subjects
+SELECT * WHERE { producer1:Product1 ?p "turgescence retrospection" }
+
+@ Query 10 (SpO)
+# object not exists
+SELECT * WHERE { producer1:Product1 ?p "NotExists" }
+
+@ Query 11 (SPo)
+# property values for rdfs:label / number of distinct subjects
+SELECT * WHERE { producer1:Product1 rdfs:label ?o }
+
+@ Query 12 (SPO)
+# sgn(specific value for rdfs:label / number of distinct subjects)
+SELECT * WHERE { producer1:Product1 rdfs:label "turgescence retrospection" }
+
+@ Query 13 (SPO)
+# object not exists
+SELECT * WHERE { producer1:Product1 rdfs:label "NotExists" }
+
+@ Query 14 (SPO)
+# subject not exists
+SELECT * WHERE { <http://example.com/other> ?p ?o }
+
+@ Query 15 (get labels of products)
+# minimum of (all rdf:type product, all labels)
+SELECT * WHERE {
+	?s a bsbm:Product ;
+	   rdfs:label ?o ;
+}
+
+@ Query 16 (get product with label x)
+# minimum of (all rdf:type product, labels y)
+SELECT * WHERE {
+	?s a bsbm:Product ;
+		rdfs:label "turgescence retrospection" .
+}
+
+@ Query 17 (get statements about product with label x)
+# minimum of (all rdf:type product, labels y, all triples) => TODO min() not appropriate
+SELECT * WHERE {
+	?s a bsbm:Product ;
+	   rdfs:label "turgescence retrospection" ;
+	   ?p ?o .
+}
+
+@ Query 18 (filter numeric attribute)
+# minimum (all rdf:type product, gt-coverage over histogram for numeric1)
+SELECT * WHERE {
+	?s a bsbm:Product ;
+	   bsbm:productPropertyNumeric1 ?n .
+	FILTER (?n > 100)
+}
+
+@ Query 19 (filter label lexicographically)
+# minimum (all rdf:type product, ge-coverage over histogram for label)
+SELECT * WHERE {
+	?s a bsbm:Product ;
+	   rdfs:label ?l .
+	FILTER (?l >= "z")
+}
+
+@ Query 20 (get product with label x, join BGPs)
+# 0.5 * (all rdf:type product * label y) 
+SELECT * WHERE {
+	{ ?s a bsbm:Product }
+	{ ?s rdfs:label "turgescence retrospection" }
+}
+
+@ Query 21 (get features of product x, join BGPs)
+# 0.5 * (avg features per subject * min(type feature, all labels))
+SELECT * WHERE {
+	{ producer1:Product1 bsbm:productFeature ?f }
+	{ ?f a bsbm:ProductFeature ; rdfs:label ?l }
+}
+
